@@ -1,0 +1,61 @@
+---
+title: "Presentation at Warwick"
+author: 
+  - "Fernando A. Zepeda Herrera"
+date: '`r format(Sys.time(), "%d %B %Y")`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#552D62",
+  black_color = "#393A3B",
+  text_color = "#393A3B",
+  text_slide_number_font_size = "0.65em",
+  extra_css = list(".remark-slide-number" = list("margin-right" = "40px","margin-bottom" = "3px"))
+)
+```
+
+```{r xaringanExtra, echo=FALSE}
+library(xaringanExtra)
+use_fit_screen()
+use_panelset()
+use_logo(image_url = "keyline_portrait_warwick.png", 
+         width = "200px", height = "125px",
+         position = css_position(bottom = "-4em", right = "0em"))
+```
+
+.center[
+
+### Plan for Today
+
+]
+
+.pull-left[
+
+<br>
+
+1. Aggregated Outputs
+  
+1. Gaussian Processes
+
+1. Variational Inference
+
+1. Examples and Discussion
+
+<br>
+]
+
